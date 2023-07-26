@@ -63,10 +63,8 @@ The Anti-Theft Detection System is a device built using Arduino and various comp
 - Modify the following lines in the code to match your WiFi credentials:
 arduino
 <pre>
-```cpp
     const char* ssid = "Your WiFi SSID";
     const char* password = "Your WiFi Password";
-```
 </pre>
 
 - Upload the code to your Arduino board.
