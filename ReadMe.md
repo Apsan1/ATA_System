@@ -5,6 +5,7 @@ The Anti-Theft Detection System is a device built using Arduino and various comp
 ## Components Required
 - Arduino board
 - Ultrasonic sensor (HC-SR04)
+- DOIT ESP32 DEVKIT
 - LCD display (16x2)
 - Buzzer
 - Two push buttons (save and reset)
@@ -16,35 +17,34 @@ The Anti-Theft Detection System is a device built using Arduino and various comp
 
 + VCC pin to 5V on Arduino
 + GND pin to GND on Arduino
-+ Trigger pin to pin 2 on Arduino
-+ Echo pin to pin 4 on Arduino
++ Trigger pin to pin 2 on ESP32
++ Echo pin to pin 4 on ESP32
 
 ### LCD Display:
 
 + VSS pin to GND on Arduino
 + VDD pin to 5V on Arduino
 + V0 pin to center pin of the 10k potentiometer
-+ RS pin to pin 14 on Arduino
-+ RW pin to GND on Arduino
-+ E pin to pin 27 on Arduino
-+ D4-D7 pins to pins 26, 25, 33, 32 on Arduino
++ RS pin to pin 14 on ESP32
++ E pin to pin 27 on ESP32
++ D4-D7 pins to pins 26, 25, 33, 32 on ESP32
 + A pin of the potentiometer to 5V
 + B pin of the potentiometer to GND
-+ Wiper pin of the potentiometer to pin 3 on Arduino
++ Wiper pin of the potentiometer to pin 3 on ESP32
 
 ### Buzzer:
 
-- Positive (longer) pin to pin 21 on Arduino
+- Positive (longer) pin to pin 21 on ESP32
 - Negative (shorter) pin to GND on Arduino
 
 ### Save Button:
 
-- One terminal to pin 19 on Arduino
+- One terminal to pin 19 on ESP32
 - The other terminal to GND on Arduino
 
 ### Reset Button:
 
-- One terminal to pin 5 on Arduino
+- One terminal to pin 5 on ESP32
 - The other terminal to GND on Arduino
 
 ## How the System Works
