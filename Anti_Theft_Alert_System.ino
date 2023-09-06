@@ -1,5 +1,6 @@
 #include <WiFi.h> //including the library of Wifi to connect it with the network
 #include <LiquidCrystal.h> //including the library of LCD to use LCD
+#include <HTTPClient.h>
 
 LiquidCrystal lcd(14, 27, 26, 25, 33, 32); //defining the LCD pins
 
@@ -7,7 +8,7 @@ const char* ssid = "Your WiFi SSID"; //the name of the network
 const char* password = "Your WiFi Password"; //the password of the network
 
 int triggerPin = 2; //defining the trigger pin of the ultrasonic sensor
-int echoPin = 4;   //defining the echo pin of the ultrasonic sensorq
+int echoPin = 4;   //defining the echo pin of the ultrasonic sensor
 int saveButtonPin = 19; //defining the save button pin
 int resetButtonPin = 5;  //defining the reset button pin
 int buzzerPin = 21;  //defining the buzzer pin
