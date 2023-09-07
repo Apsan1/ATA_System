@@ -1,6 +1,6 @@
 #include <WiFi.h> //including the library of Wifi to connect it with the network
 #include <LiquidCrystal.h> //including the library of LCD to use LCD
-#include <HTTPClient.h>
+#include <HTTPClient.h> //including the library of HTTPClient to send HTTP requests
 
 LiquidCrystal lcd(14, 27, 26, 25, 33, 32); //defining the LCD pins
 
@@ -29,9 +29,10 @@ void setup() {
   lcd.println("System Starting.."); //printing the text on the LCD screen
   delay(1000); //delaying the code for 1 second
   lcd.clear(); //clearing the LCD screen to start writing on it
+  lcd.setCursor(1, 0); //setting the cursor of the LCD screen to the second row
   Serial.print("Connecting to "); //printing the text on the serial monitor
   lcd.print("Connecting to "); //printing the text on the LCD screen
-  lcd.setCursor(1, 0); //setting the cursor of the LCD screen to the second row
+  lcd.setCursor(0, 1); //setting the cursor of the LCD screen to the second row
   lcd.print(ssid); //printing the name of the network on the LCD screen
   Serial.println(ssid); //printing the name of the network on the serial monitor
   delay(500); //delaying the code for 0.5 second
